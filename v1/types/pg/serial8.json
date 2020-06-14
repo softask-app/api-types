@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/pg/serial8.json",
+  "type": "integer",
+  "minimum": 1,
+  "maximum": 9223372036854775807
+}

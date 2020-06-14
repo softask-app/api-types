@@ -5,9 +5,7 @@
   "definitions": {
     "userId": {
       "title": "User ID",
-      "type": "integer",
-      "minimum": 0,
-      "maximum": 9223372036854775807
+      "$ref": "../pg/serial8.json"
     },
     "displayName": {
       "title": "User Display Name",
