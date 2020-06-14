@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-doc/v1/schemas/types/user/short",
+  "title": "Short User Record",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "full.json#/definitions/userId"
+    },
+    "displayName": {
+      "$ref": "full.json#/definitions/displayName"
+    },
+    "email": {
+      "$ref": "full.json#/definitions/email"
+    }
+  },
+  "required": [
+    "id",
+    "displayName",
+    "email"
+  ],
+  "additionalProperties": false
+}
