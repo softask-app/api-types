@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://softask-app.github.io/api-doc/v1/schemas/types/user/full",
+  "$id": "https://softask-app.github.io/api-types/v1/types/user/full.json",
   "title": "Extended User Record",
   "definitions": {
     "userId": {
