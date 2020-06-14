@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/meta/date-time.json",
+  "title": "RFC3339 Timestamp",
+  "description": "An RFC3339 timestamp including date, time, fractional seconds, and timezone offset.",
+  "type": "string",
+  "format": "date-time",
+  "examples": [
+    "2020-09-18T10:38:41.3508+0400",
+    "2020-10-31T11:58:27.0026Z"
+  ]
+}

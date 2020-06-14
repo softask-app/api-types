@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/task/full.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "../pg/serial8.json"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 128,
+      "pattern": "^[^\\s][^\r\n]+[^\\s]$"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1024
+    },
+    "creator": {
+      "$ref": "../user/short.json"
+    },
+    "assignees": {
+      "type": "array",
+      "items": {
+        "$ref": "../user/short.json"
+      }
+    },
+    "created": {
+      "$ref": "../meta/date-time.json"
+    },
+    "updated": {
+      "$ref": "../meta/date-time.json"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "creator",
+    "created",
+    "updated"
+  ],
+  "additionalProperties": false
+}

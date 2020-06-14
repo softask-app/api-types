@@ -3,31 +3,56 @@ v1.0.0
 
 == Common Types
 
-- https://softask-app.github.io/api-types/v1/types/meta/api-key.json[meta/api-key]
-- https://softask-app.github.io/api-types/v1/types/meta/request-id.json[meta/request-id]
-- https://softask-app.github.io/api-types/v1/types/pg/serial8.json[pg/serial8]
+https://softask-app.github.io/api-types/v1/types/meta/api-key.json[`meta/api-key`]::
+API auth token.
+
+https://softask-app.github.io/api-types/v1/types/meta/date-time.json[`meta/date-time`]::
+RFC3339 timestamp.
+
+https://softask-app.github.io/api-types/v1/types/meta/request-id.json[`meta/request-id`]::
+Unique request ID.
+
+https://softask-app.github.io/api-types/v1/types/pg/serial8.json[`pg/serial8`]::
+Postgres `BIGSERIAL` type.  Used for record IDs.
 
 == Error Types
 
-- https://softask-app.github.io/api-types/v1/types/error/400.json[error/400]
-- https://softask-app.github.io/api-types/v1/types/error/401.json[error/401]
-- https://softask-app.github.io/api-types/v1/types/error/403.json[error/403]
-- https://softask-app.github.io/api-types/v1/types/error/404.json[error/404]
-- https://softask-app.github.io/api-types/v1/types/error/405.json[error/405]
-- https://softask-app.github.io/api-types/v1/types/error/429.json[error/429]
-- https://softask-app.github.io/api-types/v1/types/error/500.json[error/500]
+https://softask-app.github.io/api-types/v1/types/error/400.json[`error/400`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/error/401.json[`error/401`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/error/403.json[`error/403`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/error/404.json[`error/404`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/error/405.json[`error/405`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/error/429.json[`error/429`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/error/500.json[`error/500`]::
+{empty}
 
 == Device Types
 
-- https://softask-app.github.io/api-types/v1/types/device/device-id.json[device/device-id]
-- https://softask-app.github.io/api-types/v1/types/device/full.json[device/full]
-- https://softask-app.github.io/api-types/v1/types/device/trust-token.json[device/trust-token]
+https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/device-id`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/device/full.json[`device/full`]::
+{empty}
+https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device/trust-token`]::
+{empty}
 
 == Task Types
 
-- https://softask-app.github.io/api-types/v1/types/task/tag.json[task/tag]
+https://softask-app.github.io/api-types/v1/types/task/full.json[`task/full`]::
+A full/extended task object.
+
+https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
+{empty}
 
 == User Types
 
-- https://softask-app.github.io/api-types/v1/types/user/short.json[user/short]
-- https://softask-app.github.io/api-types/v1/types/user/full.json[user/full]
+https://softask-app.github.io/api-types/v1/types/user/short.json[`user/short`]::
+An abbreviated user object.
+
+https://softask-app.github.io/api-types/v1/types/user/full.json[`user/full`]::
+A full/extended user object.
