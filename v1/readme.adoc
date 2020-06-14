@@ -3,6 +3,7 @@ v1.0.0
 
 == Common Types
 
+- https://softask-app.github.io/api-types/v1/types/meta/api-key.json[meta/api-key]
 - https://softask-app.github.io/api-types/v1/types/meta/request-id.json[meta/request-id]
 - https://softask-app.github.io/api-types/v1/types/pg/serial8.json[pg/serial8]
 
