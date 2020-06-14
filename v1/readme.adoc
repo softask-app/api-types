@@ -3,7 +3,18 @@ v1.0.0
 
 == Common Types
 
+- https://softask-app.github.io/api-types/v1/types/meta/request-id.json[meta/request-id]
 - https://softask-app.github.io/api-types/v1/types/pg/serial8.json[pg/serial8]
+
+== Error Types
+
+- https://softask-app.github.io/api-types/v1/types/error/400.json[error/400]
+- https://softask-app.github.io/api-types/v1/types/error/401.json[error/401]
+- https://softask-app.github.io/api-types/v1/types/error/403.json[error/403]
+- https://softask-app.github.io/api-types/v1/types/error/404.json[error/404]
+- https://softask-app.github.io/api-types/v1/types/error/405.json[error/405]
+- https://softask-app.github.io/api-types/v1/types/error/429.json[error/429]
+- https://softask-app.github.io/api-types/v1/types/error/500.json[error/500]
 
 == Device Types
 

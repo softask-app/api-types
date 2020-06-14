@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/meta/request-id.json",
+  "title": "Request ID",
+  "description": "The ID of the request that caused this error.\nUsed to enable tracing an error for a specific request.\n\nRequest IDs are generated via the https://github.com/teris-io/shortid package.",
+  "type": "string",
+  "minLength": 8,
+  "maxLength": 15,
+  "pattern": "^[^\\s]+$",
+  "examples": [
+    "iNove6iQ9J",
+    "NVDve6-9Q",
+    "VVDvc6i99J"
+  ]
+}
