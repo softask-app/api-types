@@ -45,7 +45,7 @@
       "description": "A list of users who have connected accounts with this user as support providers.",
       "type": "array",
       "items": {
-        "$ref": "short.json"
+        "$ref": "short.json#"
       }
     },
     "supports": {
@@ -53,7 +53,7 @@
       "description": "A list of users who have connected accounts with this user as users this user supports.",
       "type": "array",
       "items": {
-        "$ref": "short.json"
+        "$ref": "short.json#"
       }
     }
   },
