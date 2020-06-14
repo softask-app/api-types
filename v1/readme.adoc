@@ -20,6 +20,10 @@ v1.0.0
 
 - https://softask-app.github.io/api-types/v1/types/device/full.json[device/full]
 
+== Task Types
+
+- https://softask-app.github.io/api-types/v1/types/task/tag.json[task/tag]
+
 == User Types
 
 - https://softask-app.github.io/api-types/v1/types/user/short.json[user/short]
