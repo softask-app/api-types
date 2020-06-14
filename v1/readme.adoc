@@ -21,6 +21,7 @@ v1.0.0
 
 - https://softask-app.github.io/api-types/v1/types/device/device-id.json[device/device-id]
 - https://softask-app.github.io/api-types/v1/types/device/full.json[device/full]
+- https://softask-app.github.io/api-types/v1/types/device/trust-token.json[device/trust-token]
 
 == Task Types
 
