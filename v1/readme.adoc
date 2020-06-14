@@ -27,9 +27,9 @@ https://softask-app.github.io/api-types/v1/types/error/404.json[`error/404`]::
 {empty}
 https://softask-app.github.io/api-types/v1/types/error/405.json[`error/405`]::
 {empty}
-`https://softask-app.github.io/api-types/v1/types/error/429.json[error/429]`::
+https://softask-app.github.io/api-types/v1/types/error/429.json[`error/429`]::
 {empty}
-`https://softask-app.github.io/api-types/v1/types/error/500.json[error/500]`::
+https://softask-app.github.io/api-types/v1/types/error/500.json[`error/500`]::
 {empty}
 
 == Device Types

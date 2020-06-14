@@ -9,15 +9,11 @@
     },
     "displayName": {
       "$ref": "full.json#/definitions/displayName"
-    },
-    "email": {
-      "$ref": "full.json#/definitions/email"
     }
   },
   "required": [
     "id",
-    "displayName",
-    "email"
+    "displayName"
   ],
   "additionalProperties": false
 }
