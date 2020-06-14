@@ -1,0 +1,15 @@
+= Softask API Types
+v1.0.0
+
+== Common Types
+
+- https://softask-app.github.io/api-types/v1/types/pg/serial8.json[pg/serial8]
+
+== Device Types
+
+- https://softask-app.github.io/api-types/v1/types/device/full.json[device/full]
+
+== User Types
+
+- https://softask-app.github.io/api-types/v1/types/user/short.json[user/short]
+- https://softask-app.github.io/api-types/v1/types/user/full.json[user/full]
