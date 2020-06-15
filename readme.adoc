@@ -1,0 +1,7 @@
+= Softask API Schemata
+Elizabeth Paige Harper <eph@softask.app>
+v1.0.0
+
+Schema definitions for the types consumed and produced by the Softask REST API.
+
+Version 1.0:: https://softask-app.github.io/api-doc/v1
