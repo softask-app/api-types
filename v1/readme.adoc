@@ -13,6 +13,34 @@
 Elizabeth Paige Harper <eph@softask.app>
 v1.0.0
 
+
+== Auth Types
+
+https://softask-app.github.io/api-types/v1/types/auth/auto-token.json[`auth/auto-token`]::
+Device auto-auth payload.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/auto-token.json[]
+----
+====
+
+https://softask-app.github.io/api-types/v1/types/auth/device-payload.json[`auth/device-payload`]::
+Device auto-auth payload.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/device-payload.json[]
+----
+====
+
+
 == Common Types
 
 https://softask-app.github.io/api-types/v1/types/meta/api-key.json[`meta/api-key`]::

@@ -451,6 +451,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle"></div>
 <ul class="sectlevel1">
+<li><a href="#_auth_types">Auth Types</a></li>
 <li><a href="#_common_types">Common Types</a></li>
 <li><a href="#_error_types">Error Types</a></li>
 <li><a href="#_device_types">Device Types</a></li>
@@ -460,6 +461,83 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="_auth_types"><a class="link" href="#_auth_types">Auth Types</a></h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/auth/auto-token.json"><code>auth/auto-token</code></a></dt>
+<dd>
+<p>Device auto-auth payload.</p>
+<details>
+<summary class="title">Source</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight nowrap"><code data-lang="json"><span></span><span class="lineno"> 1 </span><span class="tok-p">{</span>
+<span class="lineno"> 2 </span>  <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 3 </span>  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/auth/auto-token.json&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 4 </span>  <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Auto-Auth Token&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 5 </span>  <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Server issued token authorizing a specific device to use auto-auth.&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 6 </span>  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 7 </span>  <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>
+<span class="lineno"> 8 </span>  <span class="tok-nt">&quot;maxLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>
+<span class="lineno"> 9 </span>  <span class="tok-nt">&quot;pattern&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;^[a-fA-F0-9]{64}$&quot;</span><span class="tok-p">,</span>
+<span class="lineno">10 </span>  <span class="tok-nt">&quot;examples&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
+<span class="lineno">11 </span>    <span class="tok-s2">&quot;87a8999b6a7b43f6b02ebb6db45013b056b022a6b06c4638a7bfcf894d3a9d73&quot;</span>
+<span class="lineno">12 </span>  <span class="tok-p">]</span>
+<span class="lineno">13 </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+</details>
+</dd>
+<dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/auth/device-payload.json"><code>auth/device-payload</code></a></dt>
+<dd>
+<p>Device auto-auth payload.</p>
+<details>
+<summary class="title">Source</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight nowrap"><code data-lang="json"><span></span><span class="lineno"> 1 </span><span class="tok-p">{</span>
+<span class="lineno"> 2 </span>  <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 3 </span>  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/auth/device-payload.json&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 4 </span>  <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Device Auth Payload&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 5 </span>  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;object&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 6 </span>  <span class="tok-nt">&quot;properties&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno"> 7 </span>    <span class="tok-nt">&quot;userId&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno"> 8 </span>      <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;User ID&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 9 </span>      <span class="tok-nt">&quot;$ref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;../pg/serial8.json&quot;</span>
+<span class="lineno">10 </span>    <span class="tok-p">},</span>
+<span class="lineno">11 </span>    <span class="tok-nt">&quot;deviceId&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno">12 </span>      <span class="tok-nt">&quot;$ref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;../device/device-id.json&quot;</span>
+<span class="lineno">13 </span>    <span class="tok-p">},</span>
+<span class="lineno">14 </span>    <span class="tok-nt">&quot;token&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno">15 </span>      <span class="tok-nt">&quot;$ref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;auto-token.json&quot;</span>
+<span class="lineno">16 </span>    <span class="tok-p">}</span>
+<span class="lineno">17 </span>  <span class="tok-p">},</span>
+<span class="lineno">18 </span>  <span class="tok-nt">&quot;required&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
+<span class="lineno">19 </span>    <span class="tok-s2">&quot;userId&quot;</span><span class="tok-p">,</span>
+<span class="lineno">20 </span>    <span class="tok-s2">&quot;deviceId&quot;</span><span class="tok-p">,</span>
+<span class="lineno">21 </span>    <span class="tok-s2">&quot;token&quot;</span>
+<span class="lineno">22 </span>  <span class="tok-p">],</span>
+<span class="lineno">23 </span>  <span class="tok-nt">&quot;additionalProperties&quot;</span><span class="tok-p">:</span> <span class="tok-kc">false</span><span class="tok-p">,</span>
+<span class="lineno">24 </span>  <span class="tok-nt">&quot;example&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno">25 </span>    <span class="tok-nt">&quot;userId&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;someuser@somesite.com&quot;</span><span class="tok-p">,</span>
+<span class="lineno">26 </span>    <span class="tok-nt">&quot;deviceId&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>
+<span class="lineno">27 </span>    <span class="tok-nt">&quot;token&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;87a8999b6a7b43f6b02ebb6db45013b056b022a6b06c4638a7bfcf894d3a9d73&quot;</span>
+<span class="lineno">28 </span>  <span class="tok-p">}</span>
+<span class="lineno">29 </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+</details>
+</dd>
+</dl>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_common_types"><a class="link" href="#_common_types">Common Types</a></h2>
 <div class="sectionbody">
@@ -974,11 +1052,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <span class="lineno"> 2 </span>  <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
 <span class="lineno"> 3 </span>  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/device/device-id.json&quot;</span><span class="tok-p">,</span>
 <span class="lineno"> 4 </span>  <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Device Identifier&quot;</span><span class="tok-p">,</span>
-<span class="lineno"> 5 </span>  <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Unique identifier for a user device.&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 5 </span>  <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Unique identifier for a user device. This ID is generated by the app on first load.&quot;</span><span class="tok-p">,</span>
 <span class="lineno"> 6 </span>  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
-<span class="lineno"> 7 </span>  <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">16</span><span class="tok-p">,</span>
-<span class="lineno"> 8 </span>  <span class="tok-nt">&quot;maxLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>
-<span class="lineno"> 9 </span>  <span class="tok-nt">&quot;pattern&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;^[^\\s]+$&quot;</span>
+<span class="lineno"> 7 </span>  <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">32</span><span class="tok-p">,</span>
+<span class="lineno"> 8 </span>  <span class="tok-nt">&quot;maxLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">32</span><span class="tok-p">,</span>
+<span class="lineno"> 9 </span>  <span class="tok-nt">&quot;pattern&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;^[a-fA-F0-9]{32}$&quot;</span>
 <span class="lineno">10 </span><span class="tok-p">}</span></code></pre>
 </div>
 </div>
@@ -1508,7 +1586,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2020-06-14 22:53:14 -0400
+Last updated 2020-06-15 16:45:38 -0400
 </div>
 </div>
 <style>

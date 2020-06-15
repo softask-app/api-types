@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/auth/device-payload.json",
+  "title": "Device Auth Payload",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "title": "User ID",
+      "$ref": "../pg/serial8.json"
+    },
+    "deviceId": {
+      "$ref": "../device/device-id.json"
+    },
+    "token": {
+      "$ref": "auto-token.json"
+    }
+  },
+  "required": [
+    "userId",
+    "deviceId",
+    "token"
+  ],
+  "additionalProperties": false,
+  "example": {
+    "userId": "someuser@somesite.com",
+    "deviceId": "",
+    "token": "87a8999b6a7b43f6b02ebb6db45013b056b022a6b06c4638a7bfcf894d3a9d73"
+  }
+}
