@@ -1,4 +1,5 @@
 = Softask API Types
+Elizabeth Paige Harper <eph@softask.app>
 v1.0.0
 
 == Common Types
