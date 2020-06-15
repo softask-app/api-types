@@ -106,6 +106,7 @@ endif::[]
 == Error Types
 
 https://softask-app.github.io/api-types/v1/types/error/400.json[`error/400`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -119,6 +120,7 @@ include::types/error/400.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/401.json[`error/401`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -132,6 +134,7 @@ include::types/error/401.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/403.json[`error/403`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -145,6 +148,7 @@ include::types/error/403.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/404.json[`error/404`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -158,6 +162,7 @@ include::types/error/404.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/405.json[`error/405`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -171,6 +176,7 @@ include::types/error/405.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/429.json[`error/429`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -184,6 +190,7 @@ include::types/error/429.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/500.json[`error/500`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -200,6 +207,7 @@ endif::[]
 == Device Types
 
 https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/device-id`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -213,6 +221,7 @@ include::types/device/device-id.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/device/full.json[`device/full`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -226,6 +235,7 @@ include::types/device/full.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device/trust-token`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
@@ -325,6 +335,7 @@ include::types/task/name.json[]
 endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
+{empty}
 ifndef::env-github[]
 +
 .Source
