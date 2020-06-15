@@ -1634,9 +1634,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </details>
 </dd>
-<dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/device/trust-token.json"><code>device/trust-token</code></a></dt>
+<dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/device/trust.json"><code>device/trust</code></a></dt>
 <dd>
-<p></p>
+<p>Device trust response body.</p>
 <details>
 <summary class="title">Source</summary>
 <div class="content">
@@ -1656,15 +1656,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 12
 13</pre></div></td><td class="code"><pre><span></span><span class="tok-p">{</span>
   <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/device/trust-token.json&quot;</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Device Auth Token&quot;</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;A 64 digit token that may be used by the device it was issued to to login without requiring the app user to enter their credentials.&quot;</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;maxLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;pattern&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;^[^\\s]+$&quot;</span><span class="tok-p">,</span>
-  <span class="tok-nt">&quot;examples&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
-     <span class="tok-s2">&quot;622ccc023864431ba81daa2899bff74d66cdae79b8d74c06941f3b3951ef2c81&quot;</span>
+  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/device/trust.json&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;object&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;properties&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+    <span class="tok-nt">&quot;token&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+      <span class="tok-nt">&quot;$ref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;../auth/auto-token.json&quot;</span>
+    <span class="tok-p">}</span>
+  <span class="tok-p">},</span>
+  <span class="tok-nt">&quot;required&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
+    <span class="tok-s2">&quot;token&quot;</span>
   <span class="tok-p">]</span>
 <span class="tok-p">}</span>
 </pre></td></tr></table></code></pre>
@@ -2351,7 +2351,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2020-06-15 17:11:40 -0400
+Last updated 2020-06-15 17:17:32 -0400
 </div>
 </div>
 <style>

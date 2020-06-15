@@ -233,8 +233,8 @@ include::types/device/full.json[]
 ====
 endif::[]
 
-https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device/trust-token`]::
-{empty}
+https://softask-app.github.io/api-types/v1/types/device/trust.json[`device/trust`]::
+Device trust response body.
 ifndef::env-github[]
 +
 .Source
@@ -242,7 +242,7 @@ ifndef::env-github[]
 ====
 [source]
 ----
-include::types/device/trust-token.json[]
+include::types/device/trust.json[]
 ----
 ====
 endif::[]
