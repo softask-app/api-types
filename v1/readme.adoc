@@ -2,7 +2,6 @@
 :source-highlighter: pygments
 :source-language: json
 :source-linenums-option:
-:pygments-linenums-mode: inline
 :pygments-style: paraiso-dark
 :toc: left
 :toc-title:
