@@ -468,7 +468,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dl>
 <dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/auth/auto-token.json"><code>auth/auto-token</code></a></dt>
 <dd>
-<p>Device auto-auth payload.</p>
+<p>Auto-Auth token.</p>
 <details>
 <summary class="title">Source</summary>
 <div class="content">
@@ -608,9 +608,78 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   <span class="tok-p">],</span>
   <span class="tok-nt">&quot;additionalProperties&quot;</span><span class="tok-p">:</span> <span class="tok-kc">false</span><span class="tok-p">,</span>
   <span class="tok-nt">&quot;example&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
-    <span class="tok-nt">&quot;userId&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;someuser@somesite.com&quot;</span><span class="tok-p">,</span>
-    <span class="tok-nt">&quot;deviceId&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>
+    <span class="tok-nt">&quot;userId&quot;</span><span class="tok-p">:</span> <span class="tok-mi">325891</span><span class="tok-p">,</span>
+    <span class="tok-nt">&quot;deviceId&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;ed4e9c0f503446dc9505d688768cf106&quot;</span><span class="tok-p">,</span>
     <span class="tok-nt">&quot;token&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;87a8999b6a7b43f6b02ebb6db45013b056b022a6b06c4638a7bfcf894d3a9d73&quot;</span>
+  <span class="tok-p">}</span>
+<span class="tok-p">}</span>
+</pre></td></tr></table></code></pre>
+</div>
+</div>
+</div>
+</details>
+</dd>
+<dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/auth/webapp-payload.json"><code>auth/webapp-payload</code></a></dt>
+<dd>
+<p>Web app auth payload.</p>
+<details>
+<summary class="title">Source</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight nowrap"><code data-lang="json"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></div></td><td class="code"><pre><span></span><span class="tok-p">{</span>
+  <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/auth/webapp-payload.json&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Login Authentication Payload&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Authentication body for login requests.&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;object&quot;</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;properties&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+    <span class="tok-nt">&quot;email&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+      <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;User Email Address&quot;</span><span class="tok-p">,</span>
+      <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
+      <span class="tok-nt">&quot;format&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;email&quot;</span>
+    <span class="tok-p">},</span>
+    <span class="tok-nt">&quot;password&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+      <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;User Password&quot;</span><span class="tok-p">,</span>
+      <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
+      <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">8</span><span class="tok-p">,</span>
+    <span class="tok-p">}</span>
+  <span class="tok-p">},</span>
+  <span class="tok-nt">&quot;required&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
+    <span class="tok-s2">&quot;email&quot;</span><span class="tok-p">,</span>
+    <span class="tok-s2">&quot;password&quot;</span>
+  <span class="tok-p">],</span>
+  <span class="tok-nt">&quot;additionalProperties&quot;</span><span class="tok-p">:</span> <span class="tok-kc">false</span><span class="tok-p">,</span>
+  <span class="tok-nt">&quot;example&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+    <span class="tok-nt">&quot;email&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;foobar@softask.app&quot;</span><span class="tok-p">,</span>
+    <span class="tok-nt">&quot;password&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;N4hMGU*Byr77@m2!&quot;</span>
   <span class="tok-p">}</span>
 <span class="tok-p">}</span>
 </pre></td></tr></table></code></pre>
@@ -2396,7 +2465,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2020-06-15 17:27:05 -0400
+Last updated 2020-06-15 17:37:30 -0400
 </div>
 </div>
 <style>

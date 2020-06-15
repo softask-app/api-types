@@ -16,7 +16,7 @@ v1.0.0
 == Auth Types
 
 https://softask-app.github.io/api-types/v1/types/auth/auto-token.json[`auth/auto-token`]::
-Device auto-auth payload.
+Auto-Auth token.
 ifndef::env-github[]
 +
 .Source
@@ -57,6 +57,19 @@ include::types/auth/device-payload.json[]
 ====
 endif::[]
 
+https://softask-app.github.io/api-types/v1/types/auth/webapp-payload.json[`auth/webapp-payload`]::
+Web app auth payload.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/webapp-payload.json[]
+----
+====
+endif::[]
 
 == Common Types
 
