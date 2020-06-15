@@ -1198,6 +1198,39 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </details>
 </dd>
+<dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/task/new.json"><code>task/new</code></a></dt>
+<dd>
+<p>Task creation payload.</p>
+<details>
+<summary class="title">Source</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight nowrap"><code data-lang="json"><span></span><span class="lineno"> 1 </span><span class="tok-p">{</span>
+<span class="lineno"> 2 </span>  <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 3 </span>  <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/task/full.json&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 4 </span>  <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Task Creation Payload&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 5 </span>  <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;object&quot;</span><span class="tok-p">,</span>
+<span class="lineno"> 6 </span>  <span class="tok-nt">&quot;properties&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno"> 7 </span>    <span class="tok-nt">&quot;name&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno"> 8 </span>      <span class="tok-nt">&quot;$ref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;name.json&quot;</span>
+<span class="lineno"> 9 </span>    <span class="tok-p">},</span>
+<span class="lineno">10 </span>    <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+<span class="lineno">11 </span>      <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
+<span class="lineno">12 </span>      <span class="tok-nt">&quot;maxLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1024</span>
+<span class="lineno">13 </span>    <span class="tok-p">}</span>
+<span class="lineno">14 </span>  <span class="tok-p">},</span>
+<span class="lineno">15 </span>  <span class="tok-nt">&quot;required&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
+<span class="lineno">16 </span>    <span class="tok-s2">&quot;id&quot;</span><span class="tok-p">,</span>
+<span class="lineno">17 </span>    <span class="tok-s2">&quot;name&quot;</span>
+<span class="lineno">18 </span>  <span class="tok-p">],</span>
+<span class="lineno">19 </span>  <span class="tok-nt">&quot;additionalProperties&quot;</span><span class="tok-p">:</span> <span class="tok-kc">false</span>
+<span class="lineno">20 </span><span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+</details>
+</dd>
 <dt class="hdlist1"><a href="https://softask-app.github.io/api-types/v1/types/task/step/full.json"><code>task/step/full</code></a></dt>
 <dd>
 <p>A full/extended step object.</p>
@@ -1475,7 +1508,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2020-06-14 22:46:06 -0400
+Last updated 2020-06-14 22:53:14 -0400
 </div>
 </div>
 <style>

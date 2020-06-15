@@ -205,6 +205,18 @@ include::types/task/short.json[]
 ----
 ====
 
+https://softask-app.github.io/api-types/v1/types/task/new.json[`task/new`]::
+Task creation payload.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/new.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/task/step/full.json[`task/step/full`]::
 A full/extended step object.
 +
