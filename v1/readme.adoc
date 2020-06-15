@@ -376,6 +376,20 @@ endif::[]
 
 == User Types
 
+https://softask-app.github.io/api-types/v1/types/user/full.json[`user/full`]::
+A full/extended user object.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/user/full.json[]
+----
+====
+endif::[]
+
 https://softask-app.github.io/api-types/v1/types/user/short.json[`user/short`]::
 An abbreviated user object.
 ifndef::env-github[]
@@ -390,8 +404,8 @@ include::types/user/short.json[]
 ====
 endif::[]
 
-https://softask-app.github.io/api-types/v1/types/user/full.json[`user/full`]::
-A full/extended user object.
+https://softask-app.github.io/api-types/v1/types/user/new.json[`user/new`]::
+User creation payload.
 ifndef::env-github[]
 +
 .Source
@@ -399,7 +413,7 @@ ifndef::env-github[]
 ====
 [source]
 ----
-include::types/user/full.json[]
+include::types/user/new.json[]
 ----
 ====
 endif::[]

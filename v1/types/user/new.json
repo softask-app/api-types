@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/user/new.json",
+  "title": "User Creation Payload",
+  "definitions": {
+    "email": {
+      "title": "User Email Address",
+      "type": "string",
+      "format": "email"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "displayName": {
+      "$ref": "full.json#/definitions/displayName"
+    },
+    "email": {
+      "$ref": "full.json#/definitions/email"
+    }
+  },
+  "required": [
+    "displayName",
+    "email"
+  ],
+  "additionalProperties": false
+}
