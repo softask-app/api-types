@@ -18,6 +18,7 @@ v1.0.0
 
 https://softask-app.github.io/api-types/v1/types/auth/auto-token.json[`auth/auto-token`]::
 Device auto-auth payload.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -27,9 +28,11 @@ Device auto-auth payload.
 include::types/auth/auto-token.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/auth/device-payload.json[`auth/device-payload`]::
 Device auto-auth payload.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -39,12 +42,14 @@ Device auto-auth payload.
 include::types/auth/device-payload.json[]
 ----
 ====
+endif::[]
 
 
 == Common Types
 
 https://softask-app.github.io/api-types/v1/types/meta/api-key.json[`meta/api-key`]::
 API auth token.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -54,9 +59,11 @@ API auth token.
 include::types/meta/api-key.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/meta/date-time.json[`meta/date-time`]::
 RFC3339 timestamp.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -66,9 +73,11 @@ RFC3339 timestamp.
 include::types/meta/date-time.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/meta/request-id.json[`meta/request-id`]::
 Unique request ID.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -78,9 +87,11 @@ Unique request ID.
 include::types/meta/request-id.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/pg/serial8.json[`pg/serial8`]::
 Postgres `BIGSERIAL` type.  Used for record IDs.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -90,10 +101,12 @@ Postgres `BIGSERIAL` type.  Used for record IDs.
 include::types/pg/serial8.json[]
 ----
 ====
+endif::[]
 
 == Error Types
 
 https://softask-app.github.io/api-types/v1/types/error/400.json[`error/400`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -103,8 +116,10 @@ https://softask-app.github.io/api-types/v1/types/error/400.json[`error/400`]::
 include::types/error/400.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/401.json[`error/401`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -114,8 +129,10 @@ https://softask-app.github.io/api-types/v1/types/error/401.json[`error/401`]::
 include::types/error/401.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/403.json[`error/403`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -125,8 +142,10 @@ https://softask-app.github.io/api-types/v1/types/error/403.json[`error/403`]::
 include::types/error/403.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/404.json[`error/404`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -136,8 +155,10 @@ https://softask-app.github.io/api-types/v1/types/error/404.json[`error/404`]::
 include::types/error/404.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/405.json[`error/405`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -147,8 +168,10 @@ https://softask-app.github.io/api-types/v1/types/error/405.json[`error/405`]::
 include::types/error/405.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/429.json[`error/429`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -158,8 +181,10 @@ https://softask-app.github.io/api-types/v1/types/error/429.json[`error/429`]::
 include::types/error/429.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/error/500.json[`error/500`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -169,11 +194,13 @@ https://softask-app.github.io/api-types/v1/types/error/500.json[`error/500`]::
 include::types/error/500.json[]
 ----
 ====
+endif::[]
 
 
 == Device Types
 
 https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/device-id`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -183,8 +210,10 @@ https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/d
 include::types/device/device-id.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/device/full.json[`device/full`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -194,8 +223,10 @@ https://softask-app.github.io/api-types/v1/types/device/full.json[`device/full`]
 include::types/device/full.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device/trust-token`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -205,12 +236,14 @@ https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device
 include::types/device/trust-token.json[]
 ----
 ====
+endif::[]
 
 
 == Task Types
 
 https://softask-app.github.io/api-types/v1/types/task/full.json[`task/full`]::
 A full/extended task object.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -220,9 +253,11 @@ A full/extended task object.
 include::types/task/full.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/short.json[`task/short`]::
 An abbreviated task object.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -232,9 +267,11 @@ An abbreviated task object.
 include::types/task/short.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/new.json[`task/new`]::
 Task creation payload.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -244,9 +281,11 @@ Task creation payload.
 include::types/task/new.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/step/full.json[`task/step/full`]::
 A full/extended step object.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -256,9 +295,11 @@ A full/extended step object.
 include::types/task/step/full.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/step/short.json[`task/step/short`]::
 An abbreviated step object.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -268,8 +309,10 @@ An abbreviated step object.
 include::types/task/step/short.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/name.json[`task/name`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -279,8 +322,10 @@ https://softask-app.github.io/api-types/v1/types/task/name.json[`task/name`]::
 include::types/task/name.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -290,11 +335,13 @@ https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
 include::types/task/tag.json[]
 ----
 ====
+endif::[]
 
 == User Types
 
 https://softask-app.github.io/api-types/v1/types/user/short.json[`user/short`]::
 An abbreviated user object.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -304,9 +351,11 @@ An abbreviated user object.
 include::types/user/short.json[]
 ----
 ====
+endif::[]
 
 https://softask-app.github.io/api-types/v1/types/user/full.json[`user/full`]::
 A full/extended user object.
+ifndef::env-github[]
 +
 .Source
 [%collapsible]
@@ -316,3 +365,4 @@ A full/extended user object.
 include::types/user/full.json[]
 ----
 ====
+endif::[]
