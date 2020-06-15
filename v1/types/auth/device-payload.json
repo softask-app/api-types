@@ -22,8 +22,8 @@
   ],
   "additionalProperties": false,
   "example": {
-    "userId": "someuser@somesite.com",
-    "deviceId": "",
+    "userId": 325891,
+    "deviceId": "ed4e9c0f503446dc9505d688768cf106",
     "token": "87a8999b6a7b43f6b02ebb6db45013b056b022a6b06c4638a7bfcf894d3a9d73"
   }
 }
