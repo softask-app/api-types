@@ -1,4 +1,15 @@
-= Softask API Types
+= API Types
+:source-highlighter: pygments
+:source-language: json
+:source-linenums-option:
+:pygments-linenums-mode: inline
+:pygments-style: paraiso-dark
+:toc: left
+:toc-title:
+:icons: font
+:sectlinks:
+:stylesheet: asciidoctor.css
+:prewrap!:
 Elizabeth Paige Harper <eph@softask.app>
 v1.0.0
 
@@ -6,66 +17,262 @@ v1.0.0
 
 https://softask-app.github.io/api-types/v1/types/meta/api-key.json[`meta/api-key`]::
 API auth token.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/meta/api-key.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/meta/date-time.json[`meta/date-time`]::
 RFC3339 timestamp.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/meta/date-time.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/meta/request-id.json[`meta/request-id`]::
 Unique request ID.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/meta/request-id.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/pg/serial8.json[`pg/serial8`]::
 Postgres `BIGSERIAL` type.  Used for record IDs.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/pg/serial8.json[]
+----
+====
 
 == Error Types
 
 https://softask-app.github.io/api-types/v1/types/error/400.json[`error/400`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/400.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/error/401.json[`error/401`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/401.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/error/403.json[`error/403`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/403.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/error/404.json[`error/404`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/404.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/error/405.json[`error/405`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/405.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/error/429.json[`error/429`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/429.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/error/500.json[`error/500`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/error/500.json[]
+----
+====
+
 
 == Device Types
 
 https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/device-id`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/device/device-id.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/device/full.json[`device/full`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/device/full.json[]
+----
+====
+
 https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device/trust-token`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/device/trust-token.json[]
+----
+====
+
 
 == Task Types
 
 https://softask-app.github.io/api-types/v1/types/task/full.json[`task/full`]::
 A full/extended task object.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/full.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/task/short.json[`task/short`]::
 An abbreviated task object.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/short.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/task/step/full.json[`task/step/full`]::
 A full/extended step object.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/step/full.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/task/step/short.json[`task/step/short`]::
 An abbreviated step object.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/step/short.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/task/name.json[`task/name`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/name.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
-{empty}
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/tag.json[]
+----
+====
 
 == User Types
 
 https://softask-app.github.io/api-types/v1/types/user/short.json[`user/short`]::
 An abbreviated user object.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/user/short.json[]
+----
+====
 
 https://softask-app.github.io/api-types/v1/types/user/full.json[`user/full`]::
 A full/extended user object.
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/user/full.json[]
+----
+====
