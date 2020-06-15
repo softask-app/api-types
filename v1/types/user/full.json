@@ -17,11 +17,6 @@
       "title": "User Email Address",
       "type": "string",
       "format": "email"
-    },
-    "created": {
-      "title": "User Creation Timestamp",
-      "type": "string",
-      "format": "date-time"
     }
   },
   "type": "object",
@@ -36,7 +31,8 @@
       "$ref": "#/definitions/email"
     },
     "created": {
-      "$ref": "#/definitions/created"
+      "title": "User Creation Timestamp",
+      "$ref": "../meta/date-time.json"
     },
     "providers": {
       "title": "Support Providers",
