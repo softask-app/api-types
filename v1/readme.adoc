@@ -46,6 +46,18 @@ https://softask-app.github.io/api-types/v1/types/device/trust-token.json[`device
 https://softask-app.github.io/api-types/v1/types/task/full.json[`task/full`]::
 A full/extended task object.
 
+https://softask-app.github.io/api-types/v1/types/task/short.json[`task/short`]::
+An abbreviated task object.
+
+https://softask-app.github.io/api-types/v1/types/task/step/full.json[`task/step/full`]::
+A full/extended step object.
+
+https://softask-app.github.io/api-types/v1/types/task/step/short.json[`task/step/short`]::
+An abbreviated step object.
+
+https://softask-app.github.io/api-types/v1/types/task/name.json[`task/name`]::
+{empty}
+
 https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
 {empty}
 

@@ -7,10 +7,7 @@
       "$ref": "../pg/serial8.json"
     },
     "name": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 128,
-      "pattern": "^[^\\s][^\r\n]+[^\\s]$"
+      "$ref": "name.json"
     },
     "description": {
       "type": "string",
@@ -23,6 +20,12 @@
       "type": "array",
       "items": {
         "$ref": "../user/short.json"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "step/short.json"
       }
     },
     "created": {
