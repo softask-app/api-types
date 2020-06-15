@@ -29,6 +29,20 @@ include::types/auth/auto-token.json[]
 ====
 endif::[]
 
+https://softask-app.github.io/api-types/v1/types/auth/auth-body.json[`auth/auth-body`]::
+Successful authentication response body.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/auth-body.json[]
+----
+====
+endif::[]
+
 https://softask-app.github.io/api-types/v1/types/auth/device-payload.json[`auth/device-payload`]::
 Device auto-auth payload.
 ifndef::env-github[]

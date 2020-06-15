@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/auth/auto-token.json",
+  "title": "Auth Response Body",
+  "type": "object",
+  "properties": {
+    "apiKey": {
+      "$ref": "../meta/api-key.json"
+    }
+  },
+  "required": [
+    "apiKey"
+  ],
+  "additionalProperties": false
+}
