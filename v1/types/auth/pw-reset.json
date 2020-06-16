@@ -5,17 +5,12 @@
   "description": "JSON payload sent to the Softask service to update a user's password.",
   "type": "object",
   "properties": {
-    "userId": {
-      "title": "User ID",
-      "$ref": "../pg/serial8.json"
-    },
     "token": {
       "title": "Password Reset Token",
       "description": "Token issued by the service (and sent to the user in an email) that authorizes the password reset.",
       "type": "string",
-      "minLength": 64,
-      "maxLength": 64,
-      "pattern": "^[a-fA-F0-9]{64}$"
+      "minLength": 65,
+      "pattern": "^[a-fA-F0-9]{65,}$"
     },
     "password": {
       "title": "New Password",
