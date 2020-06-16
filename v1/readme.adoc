@@ -6,7 +6,6 @@
 :toc: left
 :toc-title:
 :icons: font
-:sectlinks:
 :stylesheet: asciidoctor.css
 :prewrap!:
 Elizabeth Paige Harper <eph@softask.app>
