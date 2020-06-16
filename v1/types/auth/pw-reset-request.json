@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/auth/pw-reset-request.json",
+  "title": "Password Reset Request Payload",
+  "description": "JSON payload sent to the Softask service to request a password reset for a user.",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
+  },
+  "required": [
+    "email"
+  ],
+  "additionalProperties": false
+}

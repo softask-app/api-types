@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/auth/pw-reset.json",
+  "title": "Password Reset Payload",
+  "description": "JSON payload sent to the Softask service to update a user's password.",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "title": "User ID",
+      "$ref": "../pg/serial8.json"
+    },
+    "token": {
+      "title": "Password Reset Token",
+      "description": "Token issued by the service (and sent to the user in an email) that authorizes the password reset.",
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64,
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "password": {
+      "title": "New Password",
+      "$ref": "password.json"
+    }
+  },
+  "required": [
+    "userId",
+    "token",
+    "password"
+  ],
+  "additionalProperties": false
+}

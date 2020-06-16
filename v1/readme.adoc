@@ -61,7 +61,36 @@ include::types/auth/webapp-payload.json[]
 ====
 endif::[]
 
+https://softask-app.github.io/api-types/v1/types/auth/pw-reset.json[`auth/pw-reset`]::
+Password reset payload.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/pw-reset.json[]
+----
+====
+endif::[]
+
+https://softask-app.github.io/api-types/v1/types/auth/pw-reset-request.json[`auth/pw-reset-request`]::
+Password reset request payload.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/pw-reset-request.json[]
+----
+====
+endif::[]
+
 === Fields
+
 https://softask-app.github.io/api-types/v1/types/auth/auto-token.json[`auth/auto-token`]::
 Auto-Auth token.
 ifndef::env-github[]
@@ -75,6 +104,21 @@ include::types/auth/auto-token.json[]
 ----
 ====
 endif::[]
+
+https://softask-app.github.io/api-types/v1/types/auth/password.json[`auth/password`]::
+User password.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/password.json[]
+----
+====
+endif::[]
+
 
 
 //------------------------------------------------------------------------------

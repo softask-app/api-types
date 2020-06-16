@@ -11,9 +11,7 @@
       "format": "email"
     },
     "password": {
-      "title": "User Password",
-      "type": "string",
-      "minLength": 8
+      "$ref": "password.json"
     }
   },
   "required": [
