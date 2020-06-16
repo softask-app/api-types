@@ -10,7 +10,10 @@
       "description": "Token issued by the service (and sent to the user in an email) that authorizes the password reset.",
       "type": "string",
       "minLength": 65,
-      "pattern": "^[a-fA-F0-9]{65,}$"
+      "pattern": "^[a-fA-F0-9]{65,}$",
+      "examples": [
+        "bfdca5b9d7ea47fcb4f7017a1603c3ae7d0bd8caf9d0442eac9b706e715c1b1a12987"
+      ]
     },
     "password": {
       "title": "New Password",
