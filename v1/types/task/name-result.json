@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://softask-app.github.io/api-types/v1/types/task/name-result.json",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "../pg/serial8.json"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 128
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ],
+  "additionalProperties": false
+
+}

@@ -13,21 +13,11 @@ Elizabeth Paige Harper <eph@softask.app>
 v1.0.0
 
 
+//------------------------------------------------------------------------------
+
 == Auth Types
 
-https://softask-app.github.io/api-types/v1/types/auth/auto-token.json[`auth/auto-token`]::
-Auto-Auth token.
-ifndef::env-github[]
-+
-.Source
-[%collapsible]
-====
-[source]
-----
-include::types/auth/auto-token.json[]
-----
-====
-endif::[]
+=== Full Types
 
 https://softask-app.github.io/api-types/v1/types/auth/auth-body.json[`auth/auth-body`]::
 Successful authentication response body.
@@ -71,7 +61,27 @@ include::types/auth/webapp-payload.json[]
 ====
 endif::[]
 
+=== Fields
+https://softask-app.github.io/api-types/v1/types/auth/auto-token.json[`auth/auto-token`]::
+Auto-Auth token.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/auth/auto-token.json[]
+----
+====
+endif::[]
+
+
+//------------------------------------------------------------------------------
+
 == Common Types
+
+=== Fields
 
 https://softask-app.github.io/api-types/v1/types/meta/api-key.json[`meta/api-key`]::
 API auth token.
@@ -129,7 +139,12 @@ include::types/pg/serial8.json[]
 ====
 endif::[]
 
+
+//------------------------------------------------------------------------------
+
 == Error Types
+
+=== Full Types
 
 https://softask-app.github.io/api-types/v1/types/error/400.json[`error/400`]::
 {empty}
@@ -230,21 +245,11 @@ include::types/error/500.json[]
 endif::[]
 
 
+//------------------------------------------------------------------------------
+
 == Device Types
 
-https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/device-id`]::
-{empty}
-ifndef::env-github[]
-+
-.Source
-[%collapsible]
-====
-[source]
-----
-include::types/device/device-id.json[]
-----
-====
-endif::[]
+=== Full Types
 
 https://softask-app.github.io/api-types/v1/types/device/full.json[`device/full`]::
 {empty}
@@ -274,8 +279,30 @@ include::types/device/trust.json[]
 ====
 endif::[]
 
+=== Fields
+
+https://softask-app.github.io/api-types/v1/types/device/device-id.json[`device/device-id`]::
+{empty}
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/device/device-id.json[]
+----
+====
+endif::[]
+
+
+//------------------------------------------------------------------------------
 
 == Task Types
+
+=== Full Types
+
+==== Tasks
 
 https://softask-app.github.io/api-types/v1/types/task/full.json[`task/full`]::
 A full/extended task object.
@@ -319,6 +346,22 @@ include::types/task/new.json[]
 ====
 endif::[]
 
+https://softask-app.github.io/api-types/v1/types/task/name-result.json[`task/name-result`]::
+Type-ahead search result item for task names.
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/name-result.json[]
+----
+====
+endif::[]
+
+==== Steps
+
 https://softask-app.github.io/api-types/v1/types/task/step/full.json[`task/step/full`]::
 A full/extended step object.
 ifndef::env-github[]
@@ -347,18 +390,7 @@ include::types/task/step/short.json[]
 ====
 endif::[]
 
-https://softask-app.github.io/api-types/v1/types/task/name.json[`task/name`]::
-ifndef::env-github[]
-+
-.Source
-[%collapsible]
-====
-[source]
-----
-include::types/task/name.json[]
-----
-====
-endif::[]
+==== Tags
 
 https://softask-app.github.io/api-types/v1/types/task/tag.json[`task/tag`]::
 {empty}
@@ -374,7 +406,27 @@ include::types/task/tag.json[]
 ====
 endif::[]
 
+=== Fields
+
+https://softask-app.github.io/api-types/v1/types/task/name.json[`task/name`]::
+ifndef::env-github[]
++
+.Source
+[%collapsible]
+====
+[source]
+----
+include::types/task/name.json[]
+----
+====
+endif::[]
+
+
+//------------------------------------------------------------------------------
+
 == User Types
+
+=== Full Types
 
 https://softask-app.github.io/api-types/v1/types/user/full.json[`user/full`]::
 A full/extended user object.
