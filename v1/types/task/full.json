@@ -33,6 +33,9 @@
     },
     "updated": {
       "$ref": "../meta/date-time.json"
+    },
+    "deleted": {
+      "$ref": "../meta/date-time.json"
     }
   },
   "required": [

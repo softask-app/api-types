@@ -29,7 +29,7 @@
     "updated": {
       "$ref": "../../meta/date-time.json"
     },
-    "delete": {
+    "deleted": {
       "$ref": "../../meta/date-time.json"
     }
   },
