@@ -710,21 +710,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 26
 27
 28
-29</pre></div></td><td class="code"><pre><span></span><span class="tok-p">{</span>
+29
+30
+31
+32</pre></div></td><td class="code"><pre><span></span><span class="tok-p">{</span>
   <span class="tok-nt">&quot;$schema&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;http://json-schema.org/draft-07/schema#&quot;</span><span class="tok-p">,</span>
   <span class="tok-nt">&quot;$id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://softask-app.github.io/api-types/v1/types/auth/pw-reset.json&quot;</span><span class="tok-p">,</span>
   <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Password Reset Payload&quot;</span><span class="tok-p">,</span>
   <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;JSON payload sent to the Softask service to update a user&#39;s password.&quot;</span><span class="tok-p">,</span>
   <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;object&quot;</span><span class="tok-p">,</span>
   <span class="tok-nt">&quot;properties&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+    <span class="tok-nt">&quot;userId&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
+      <span class="tok-nt">&quot;$ref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;../pg/serial8.json&quot;</span>
+    <span class="tok-p">},</span>
     <span class="tok-nt">&quot;token&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
       <span class="tok-nt">&quot;title&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Password Reset Token&quot;</span><span class="tok-p">,</span>
       <span class="tok-nt">&quot;description&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Token issued by the service (and sent to the user in an email) that authorizes the password reset.&quot;</span><span class="tok-p">,</span>
       <span class="tok-nt">&quot;type&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;string&quot;</span><span class="tok-p">,</span>
-      <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">65</span><span class="tok-p">,</span>
-      <span class="tok-nt">&quot;pattern&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;^[a-fA-F0-9]{65,}$&quot;</span><span class="tok-p">,</span>
+      <span class="tok-nt">&quot;minLength&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>
+      <span class="tok-nt">&quot;pattern&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;^[a-fA-F0-9]{64}$&quot;</span><span class="tok-p">,</span>
       <span class="tok-nt">&quot;examples&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>
-        <span class="tok-s2">&quot;bfdca5b9d7ea47fcb4f7017a1603c3ae7d0bd8caf9d0442eac9b706e715c1b1a12987&quot;</span>
+        <span class="tok-s2">&quot;bfdca5b9d7ea47fcb4f7017a1603c3ae7d0bd8caf9d0442eac9b706e715c1b1a&quot;</span>
       <span class="tok-p">]</span>
     <span class="tok-p">},</span>
     <span class="tok-nt">&quot;password&quot;</span><span class="tok-p">:</span> <span class="tok-p">{</span>
